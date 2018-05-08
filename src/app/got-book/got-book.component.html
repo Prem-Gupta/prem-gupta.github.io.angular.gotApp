@@ -1,0 +1,27 @@
+<div class="card text-center">
+    <div class="card-header">
+       All Books Information
+    </div>
+  <br>
+  <br>
+  <br>
+  <br>
+    <div class="row" style="text-align: center" *ngIf= "allBooks.length>0">
+       <div class="col-md-6" *ngFor = "let book of allBooks">
+          <div class="panel panel-default">
+              <div class="panel-heading"> {{ book.name | uppercase}} </div>
+              <div class="panel-body">
+                  <p>{{ book.country }}</p>
+              </div>
+              <div class="panel-footer"> Written on {{ book.released | date}}
+                  <br /> by {{ book.authors[0] }} and {{ book.publisher }}
+                  <br />
+                  <br />
+                  <a class="btn btn-primary" (click)="detailInformation(book)">Details</a>
+
+              </div>
+          </div>
+       </div>
+    </div>
+   
+  </div>

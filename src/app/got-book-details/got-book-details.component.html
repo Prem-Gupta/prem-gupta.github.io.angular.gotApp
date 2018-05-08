@@ -1,0 +1,24 @@
+<div class="card text-center">
+    <div class="card-header">
+       Single Book Information
+    </div>
+  <br>
+  <br>
+  <br>
+  <br>
+    <div class="row" style="text-align: center" >
+       <div class="col-md-12" >
+          <div class="panel panel-default">
+              <div class="panel-heading"> {{ singleBook.name | uppercase}} </div>
+              <div class="panel-body">
+                  <p>{{ singleBook.country }}</p>
+              </div>
+              <div class="panel-footer"> Written on {{ singleBook.released | date}}
+                  <br /> by {{ singleBook.authors[0] }} and {{ singleBook.publisher }}
+                 
+              </div>
+          </div>
+       </div>
+    </div>
+   
+  </div>

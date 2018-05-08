@@ -1,0 +1,28 @@
+<div class="card text-center">
+  <div class="card-header">
+    All House Information
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row" style="text-align: center" *ngIf="allHouses.length>0">
+    <div class="col-md-12" *ngFor="let house of allHouses">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4>Name : {{ house.name | uppercase}}</h4>
+          <h4>Region : {{ house.region | uppercase}}</h4>
+          <h4>Description : {{ house.coatOfArms }}</h4>
+        </div>
+        <br>
+        <div>
+          <a class="btn btn-primary" (click)="detailInformation(house)">Details</a>
+
+        </div>
+        <br>
+
+      </div>
+    </div>
+  </div>
+
+</div>

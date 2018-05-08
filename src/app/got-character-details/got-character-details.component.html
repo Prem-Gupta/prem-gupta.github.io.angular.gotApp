@@ -1,0 +1,25 @@
+<div class="card text-center">
+    <div class="card-header">
+       Single Character Information
+    </div>
+  <br>
+  <br>
+  <br>
+  <br>
+    <div class="row" style="text-align: center" >
+       <div class="col-md-12" >
+          <div class="panel panel-default">
+              <div class="panel-heading">Name : {{ singleChar.name | uppercase}} </div>
+              <div class="panel-body">
+                  <p>Gender : {{ singleChar.gender }}</p>
+                  <p>Culture : {{ singleChar.culture }}</p>
+              </div>
+              <div class="panel-footer"> Titles  {{ singleChar.titles[0] }}
+                  <br /> 
+                 
+              </div>
+          </div>
+       </div>
+    </div>
+   
+  </div>
